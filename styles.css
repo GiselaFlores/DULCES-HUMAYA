@@ -1,4 +1,50 @@
-.amarillo{
-    color: gold;
-    background-color:#000000;
+/*Estilos de presentacion*/
+#fondoBienvenida{
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Estilos de Cards en general*/
+.cardGenerales{
+    border: none;
+    background-color: transparent;
+    padding: 1em;
+    margin: none;
+    color: white;
+}
+
+
+
+/*Media query*/
+@media screen and (min-width:480px) and (max-width:940px){
+    .cardGenerales{
+        color: black;
+    }
+}
+
+@media screen and (min-width:941px) and (max-width:1300px){
+    #fondoBienvenida{
+        height: 100%;
+    }
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .contenedorTexto{
+        margin: 4rem;
+    }
+    
+}
+
+@media screen and (min-width:1301px){
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .contenedorTexto{
+        margin: 4rem;
+    }
 }
